@@ -1,0 +1,5 @@
+services:
+  bot:
+    image: "jdwillmsen/go-discord-hello-bot:latest"
+    env_file:
+      - .env
