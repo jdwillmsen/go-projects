@@ -1,0 +1,36 @@
+{
+  "name": "todo-api",
+  "projectType": "application",
+  "sourceRoot": "src/todo-api",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "src/todo-api",
+        "command": "go build -o ../../dist/packages/todo-api ./main.go"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "src/todo-api",
+        "command": "go run main.go"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "src/todo-api",
+        "command": "go test"
+      }
+    },
+    "e2e": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "src/todo-api",
+        "command": "go test"
+      }
+    }
+  },
+  "tags": []
+}
