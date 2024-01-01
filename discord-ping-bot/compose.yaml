@@ -1,0 +1,3 @@
+services:
+  bot:
+    image: "jdwillmsen/go-discord-ping-bot:latest"
