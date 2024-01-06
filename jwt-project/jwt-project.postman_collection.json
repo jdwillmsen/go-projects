@@ -1,0 +1,375 @@
+{
+	"info": {
+		"_postman_id": "4e3421d4-d4a6-4ed8-914e-8a9f5729a8f2",
+		"name": "jwt-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16579418",
+		"_collection_link": "https://usersrole.postman.co/workspace/JDW~dd00b4dc-8840-4422-8259-84aa7a4a9965/collection/16579418-4e3421d4-d4a6-4ed8-914e-8a9f5729a8f2?action=share&source=collection_link&creator=16579418"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "sign-up",
+					"item": [
+						{
+							"name": "sign-up",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\": \"Tester\",\r\n    \"last_name\": \"GoLang\",\r\n    \"password\": \"password\",\r\n    \"email\": \"test2@gmail.com\",\r\n    \"phone\": \"123465\",\r\n    \"user_type\": \"ADMIN\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/auth/sign-up",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "sign-up (jake)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\": \"Jake\",\r\n    \"last_name\": \"Willmsen\",\r\n    \"password\": \"password\",\r\n    \"email\": \"jdwillmsen@gmail.com\",\r\n    \"phone\": \"9522900445\",\r\n    \"user_type\": \"ADMIN\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/auth/sign-up",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "sign-up (user)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\": \"Tester\",\r\n    \"last_name\": \"GoLang\",\r\n    \"password\": \"password\",\r\n    \"email\": \"test-user@gmail.com\",\r\n    \"phone\": \"000000000\",\r\n    \"user_type\": \"USER\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/auth/sign-up",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "sign-up (admin)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\": \"Tester\",\r\n    \"last_name\": \"GoLang\",\r\n    \"password\": \"password\",\r\n    \"email\": \"test-admin@gmail.com\",\r\n    \"phone\": \"100000000\",\r\n    \"user_type\": \"ADMIN\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/auth/sign-up",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"jdwillmsen@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login (jake)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"jdwillmsen@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login (user)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"test-user@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login (admin)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"test-admin@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9000/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Impkd2lsbG1zZW5AZ21haWwuY29tIiwiRmlyc3ROYW1lIjoiSmFrZSIsIkxhc3ROYW1lIjoiV2lsbG1zZW4iLCJVaWQiOiI2NTk4ZDhkZTk2MTk1MDYyZjM0Y2IyM2YiLCJVc2VyVHlwZSI6IkFETUlOIiwiZXhwIjoxNzA0NjAyOTU4fQ.D3xf7VgI6P3zXxtUzr2-JU1yEC4CXsfwMlgoRQmIEDg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "by-user-id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Impkd2lsbG1zZW5AZ21haWwuY29tIiwiRmlyc3ROYW1lIjoiSmFrZSIsIkxhc3ROYW1lIjoiV2lsbG1zZW4iLCJVaWQiOiI2NTk4ZDhkZTk2MTk1MDYyZjM0Y2IyM2YiLCJVc2VyVHlwZSI6IkFETUlOIiwiZXhwIjoxNzA0NjAzMTY2fQ.QmL6k97ItG2UhfkST0e8tJSAebse9zce001KsA7Vhxg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/users/:user-id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"users",
+								":user-id"
+							],
+							"variable": [
+								{
+									"key": "user-id",
+									"value": "6598d8e796195062f34cb243"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "api-1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Impkd2lsbG1zZW5AZ21haWwuY29tIiwiRmlyc3ROYW1lIjoiSmFrZSIsIkxhc3ROYW1lIjoiV2lsbG1zZW4iLCJVaWQiOiI2NTk4ZWY1ZGFjZjU1YTMzZjRiMTJiMTgiLCJVc2VyVHlwZSI6IkFETUlOIiwiZXhwIjoxNzA0NjA3OTc5fQ.495GZEv1GP8UAN1wYERhSMiglWTjYXuFjPZSVtlTf4c",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/api-1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api-2",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Impkd2lsbG1zZW5AZ21haWwuY29tIiwiRmlyc3ROYW1lIjoiSmFrZSIsIkxhc3ROYW1lIjoiV2lsbG1zZW4iLCJVaWQiOiI2NTk4ZWY1ZGFjZjU1YTMzZjRiMTJiMTgiLCJVc2VyVHlwZSI6IkFETUlOIiwiZXhwIjoxNzA0NjA3OTc5fQ.495GZEv1GP8UAN1wYERhSMiglWTjYXuFjPZSVtlTf4c",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:9000/api-2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api-2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

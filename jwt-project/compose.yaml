@@ -1,0 +1,17 @@
+services:
+  jwt:
+    image: "jdwillmsen/go-jwt-project:latest"
+    ports:
+      - "9000:9000"
+    depends_on:
+      - mongodb
+    environment:
+      PORT: 9000
+      MONGODB_URL: mongodb://user:secret@mongodb:27017/go-auth?authSource=admin&authMechanism=SCRAM-SHA-1
+  mongodb:
+    image: "mongo"
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: user
+      MONGO_INITDB_ROOT_PASSWORD: secret
