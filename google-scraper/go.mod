@@ -1,4 +1,4 @@
-module github.com/jdwillmsen/google-scrapper
+module github.com/jdwillmsen/google-scraper
 
 go 1.21.5
 
