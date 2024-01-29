@@ -49,7 +49,7 @@ func (u *UTXOSet) FindSpendableOutputs(pubKeyHash []byte, amount int) (int, map[
 	return accumulated, unspentOuts
 }
 
-func (u *UTXOSet) FindUTXO(pubKeyHash []byte) []TxOutput {
+func (u *UTXOSet) FindUnspentTransactions(pubKeyHash []byte) []TxOutput {
 	var UTXOs []TxOutput
 
 	db := u.Blockchain.Database
